@@ -6,10 +6,11 @@
 
 1. [Installation](#installation)
 1. [Motivation](#motivaton)
-1. [File Descriptions](#files)
 1. [Data Description](#data)
+1. [The Notebook](#notebook)
+1. [Python scripts](#scripts)
 1. [Results](#results)
-1. [Model](#model)
+
 
 ## Installation <a name="installation"></a>
 
@@ -30,14 +31,14 @@ A huge variety of factors contribute to the success or failure of a project — 
 
 A detailed description of the data is given [here](https://github.com/lima-tango/kickstarter/blob/main/columns.md)
 
-## The Notebook <a name="The Notebook"></a>
+## The Notebook <a name="notebook"></a>
 
 The Jupyter notebook (**Kickstarter_project_group3.ipynb**) contains the data cleaning, feature engineering, a detailed EDA and an overview of the consideration of different models, with different hyperparameters.
 
 Due to github storage limitation the uploaded notebooks contains no output, please run them yourself.
 
 
-## Python scripts <a name="Python scripts"></a>
+## Python scripts <a name="scripts"></a>
 
 There are two python scripts, the first one (**generate_model.py**) for building the best model found in the notebook and the second (**run_model.py**) for runing the prediction.
 

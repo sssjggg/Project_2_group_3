@@ -47,6 +47,9 @@ import sys
 Python Skript, which takes a train, test data and model as argumend 
 and saves the modelprediction and the classification repotr
 also it will print the report and the confisuion matrix, the latter it also will plot in a new window
+
+Comand to run this file:
+python run_model.py 'test.csv' 'train.csv' 'model.csv' 
 '''
 
 #import pickle
@@ -77,7 +80,8 @@ def prediction(X_train, X_test, y_train, y_test, model):
     print(classification_report(y_test,y_pred))
     print(f"--- CONFUSION MATRIX {'-'*10}")
     print(confusion_matrix(y_test,y_pred))
-    plot_confusion_matrix(model, X_test, y_test)
+    #plot_confusion_matrix(model, X_test, y_test)
+    plot_confusion_matrix(model, X_test, y_test,display_labels=["unsuccessful", "successful"])
     plt.show()
     return classification_report(y_test,y_pred), y_train_pred, y_pred
     
@@ -98,5 +102,3 @@ with open('prediction.csv', 'wb') as f:
 
 with open('class_report.csv', 'wb') as f:
     pickle.dump([report],f)
-
-## python pred_print_plot_test.py 'test_test.csv' 'train_test.csv' 'model_test.csv' 

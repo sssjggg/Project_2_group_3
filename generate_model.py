@@ -49,13 +49,13 @@ the model and the variables from train_test_split
 
 Includes the whole data preperation with data cleaning and feature engineering.
 For further information please see the representing notebook
+
+Comand to run this file:
+python generate_model.py 'data/Kickstarter.csv'
 '''
 
 def load_data(filename):
-    #pd.read_pickle('data/Kickstarter.csv')
-    #data = pd.read_csv(filename)
     data = pd.read_csv(filename, index_col = [0])
-    #data =  pickle.load(open(filename, 'rb'))
     return data
     
 
@@ -150,12 +150,8 @@ def transform(chosen_transformer, X_train, X_test):
 
 
 ### Call funktion etc
-#filename = 'data/Kickstarter.csv'
 filename = sys.argv[1]
-print(filename)
 df =  load_data(filename)
-print(df.info())
-print(df.head(2))
 
 out = ['urls','source_url','currency_symbol', 'currency_trailing_code', 'friends','is_backing','is_starred',
 'permissions', 'photo', 'name', 'blurb', 'profile', 'creator', "location", 'slug', "usd_type"]
@@ -210,5 +206,3 @@ pickle.dump([X_train, y_train], open(filename, 'wb'))
 
 filename = 'test.csv' 
 pickle.dump([X_test, y_test], open(filename, 'wb'))
-
-# python file.py 'data/Kickstarter.csv'
