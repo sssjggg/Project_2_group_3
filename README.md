@@ -29,7 +29,7 @@ A huge variety of factors contribute to the success or failure of a project — 
 
 ## Data Description <a name="data"></a>
 
-A detailed description of the data is given [here](https://github.com/lima-tango/kickstarter/blob/main/columns.md)
+A detailed description of the data is given [here](https://github.com/sssjggg/project_2_group_3//blob/main/columns.md)
 
 ## The Notebook <a name="notebook"></a>
 
@@ -54,6 +54,6 @@ python run_model.py 'test.csv' 'train.csv' 'model.csv'
 ```
 ## Results <a name="results"></a>
 
-The results are presented in this [presentation](https://github.com/lima-tango/kickstarter/blob/main/kickstarter_presentation.pdf).
+The results are presented in this [presentation](https://github.com/sssjggg/project_2_group_3//blob/main/kickstarter_presentation.pdf).
 
 
