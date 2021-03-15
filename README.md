@@ -26,15 +26,6 @@ In recent years, the range of funding options for projects created by individual
 Kickstarter, founded in 2009, is one particularly well-known and popular crowdfunding platform. It has an all-or-nothing funding model, whereby a project is only funded if it meets its goal amount; otherwise no money is given by backers to a project.
 A huge variety of factors contribute to the success or failure of a project — in general, and also on Kickstarter. Some of these are able to be quantified or categorized, which allows for the construction of a model to attempt to predict whether a project will succeed or not. The aim of this project is to construct such a model and also to analyse Kickstarter project data more generally, in order to help potential project creators assess whether or not Kickstarter is a good funding option for them, and what their chances of success are.
 
-## File Descriptions <a name="files"></a>
-
-| File | Description |
-| --- | --- |
-| EDA.ipynb | Analysis of the data. |
-| Model.ipynb | Development of the best model. |
-| | A python script that prepares the data, trains a model, and predicts on test data. |
-| | |
-
 ## Data Description <a name="data"></a>
 
 A detailed description of the data is given [here](https://github.com/lima-tango/kickstarter/blob/main/columns.md)
